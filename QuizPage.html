@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title> <!--check it later -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<img src ="brain.png" alt="Test your brain" style="width:100px; float: left; position: absolute; left: 20px" >
+  <h1 >IQ Test</h1>
+  <p>Free IQ Test with Official and reliable results</p>
+</header>
+<div class="content" style="padding-bottom: 200px"><!-- our body start from here -->
+
+	<p>Take a fast demo IQ test of the Pro Certified Admissions IQ test of the International High IQ Society, or our Classical Intelligence test to get a taste of what a full length IQ test is like.<br>
+
+When you complete a free IQ test you will get an estimate of your IQ score or the number of questions you answered correctly. Share your IQ score with your friends. Learn if you might qualify for membership of the High IQ society.
+When you complete a free IQ test you will get an estimate of your IQ score or the number of questions you answered correctly. Share your IQ score with your friends. Learn if you might qualify for membership of the High IQ society.
+	</p>
+	<img src="testPng1.png" id="testPng1" alt="the testPic is not working">
+	<br>
+  <button id="startbtn" class="button button1 ">Start the test</button><br>
+
+
+  <!-- qustions -->
+<div id="body">
+	<form id="quiz" name="quiz">
+  	<fieldset style="border-radius: 10px">
+    <legend>Start the test</legend>
+
+    <div>
+  		<p> 1. qustion number </p><br>
+  		1 <input type="radio" name="q1" value="holand" required><br>
+  		2 <input type="radio" name="q1" value="holand1"><br>
+  		3 <input type="radio" name="q1" value="holand2"><br>
+  		4 <input type="radio" name="q1" value="holand3">
+  	</div><br>
+
+      <div>
+  		<p> 2. qustion number </p><br>
+  		1 <input type="radio" name="q2" value="q2" required><br>
+  		2 <input type="radio" name="q2" value="q2"><br>
+  		3 <input type="radio" name="q2" value="q2"><br>
+  		4 <input type="radio" name="q2" value="q2">
+  </div>	<br>
+
+  	<div>
+  		<p> 3. qustion number </p><br>
+  		1 <input type="radio" name="q3" value="q3" required><br>
+  		2 <input type="radio" name="q3" value="q3"><br>
+  		3 <input type="radio" name="q3" value="q3"><br>
+  		4 <input type="radio" name="q3" value="q3">  </div>	<br>
+
+  	<div>
+  		<p> 4. qustion number </p><br>
+  		1 <input type="radio" name="q4" value="q4" required><br>
+  		2 <input type="radio" name="q4" value="q4"><br>
+  		3 <input type="radio" name="q4" value="q4"><br>
+  		4 <input type="radio" name="q4" value="q4">
+  </div>	<br>
+
+  	<div>
+  		<p> 5. qustion number </p><br>
+  		1 <input type="radio" name="q5" value="q5" required><br>
+  		2 <input type="radio" name="q5" value="q5"><br>
+  		3 <input type="radio" name="q5" value="q5"><br>
+  		4 <input type="radio" name="q5" value="q5">
+  </div>	<br>
+
+  	<div>
+  		<p> 6. qustion number </p><br>
+  		1 <input type="radio" name="q6" value="q6" required><br>
+  		2 <input type="radio" name="q6" value="q6"><br>
+  		3 <input type="radio" name="q6" value="q6"><br>
+  		4 <input type="radio" name="q6" value="q6">
+  </div>	<br>
+
+  	<div>
+  		<p> 7. qustion number </p><br>
+  		1 <input type="radio" name="q7" value="q7" required><br>
+  		2 <input type="radio" name="q7" value="q7"><br>
+  		3 <input type="radio" name="q7" value="q7"><br>
+  		4 <input type="radio" name="q7" value="q7">
+  	</div><br>
+
+      <div>
+  		<p> 8. qustion number </p><br>
+  		1 <input type="radio" name="q8" value="q8" required><br>
+  		2 <input type="radio" name="q8" value="q8"><br>
+  		3 <input type="radio" name="q8" value="q8"><br>
+  		4 <input type="radio" name="q8" value="q8">
+ </div> <br>
+
+  	 <div>
+  		<p> 9. qustion number </p><br>
+  		1 <input type="radio" name="q9" value="q9" required><br>
+  		2 <input type="radio" name="q9" value="q9"><br>
+  		3 <input type="radio" name="q9" value="q9"><br>
+  		4 <input type="radio" name="q9" value="q9">
+ </div> <br>
+
+  		<div>
+  		<p> 10. qustion number </p><br>
+  		1 <input type="radio" name="q10" value="q10" required><br>
+  		2 <input type="radio" name="q10" value="q10"><br>
+  		3 <input type="radio" name="q10" value="q10"><br>
+  		4 <input type="radio" name="q10" value="q10">
+      </div><br>
+
+  	<input id="button" type="button" value="Result" onclick="sub();">
+</fieldset>
+</form>
+  </div>
+  <div id="result" style="text-align: center; margin-top: 10px"></div>
+</div> 
+
+<hr>
+<footer>© 2018 Amjad &#38;
+ Mohannad All Rights Reserved</footer>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>
