@@ -1,128 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quiz</title> <!--check it later -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Quiz</title> 
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- external sheet -->
 </head>
 <body>
-<header>
-	<img src ="images/brain.png" alt="Test your brain" style="width:100px; float: left; position: absolute; left: 20px" >
-  <h1 >IQ Test</h1>
-  <p>Free IQ Test with Official and reliable results</p>
-</header>
-<div class="content" style="padding-bottom: 200px"><!-- our body start from here -->
+  <header>
+	  <img src ="images/brain.png" alt="Test your brain" style="width:100px; float: left; position: absolute; left: 20px" >
+    <h1 >IQ Test</h1>
+    <p>Free IQ Test with Official and reliable results</p>
+  </header>
+  <div class="content" style="padding-bottom: 200px"> <!-- our body start from here -->
+	  <p>Take a fast demo IQ test of the Pro Certified Admissions IQ test of the International High IQ Society, or our Classical Intelligence test to get a taste of what a full length IQ test is like.<br>
 
-	<p>Take a fast demo IQ test of the Pro Certified Admissions IQ test of the International High IQ Society, or our Classical Intelligence test to get a taste of what a full length IQ test is like.<br>
-
-When you complete a free IQ test you will get an estimate of your IQ score or the number of questions you answered correctly. Share your IQ score with your friends. Learn if you might qualify for membership of the High IQ society.
-When you complete a free IQ test you will get an estimate of your IQ score or the number of questions you answered correctly. Share your IQ score with your friends. Learn if you might qualify for membership of the High IQ society.
-	</p>
-	<img src="images/testPng1.png" id="testPng1" alt="the testPic is not working">
-	<br>
-  <button id="startbtn" class="button button1 ">Start the test</button><br>
-
-
+    When you complete a free IQ test you will get an estimate of your IQ score or the number of questions you answered correctly. Share your IQ score with your friends. Learn if you might qualify for membership of the High IQ society.
+    When you complete a free IQ test you will get an estimate of your IQ score or the number of questions you answered correctly. Share your IQ score with your friends. Learn if you might qualify for membership of the High IQ society.
+	  </p>
+	  <img src="images/testPng1.png" id="testPng1" alt=" Test Picture">
+	  <br>
+    <button id="startbtn" class="button">Start the test</button><br>
   <!-- qustions -->
-<div id="body">
-	<form id="quiz" name="quiz">
-  	<fieldset style="border-radius: 10px">
-    <legend>Start the test</legend>
+    <div id="body">
+	    <form id="quiz" name="quiz">
+  	    <fieldset style="border-radius: 10px">
+          <legend>Test </legend>
 
+<!-- qustion form each of qustion have a 4 radio buttons-->
+
+<!-- Requierd atrr work for 4 radio button  --> 
+
+<!-- each of qustion have an valu we stor the value in quiz js in var correctAnswers = ['33 percent', 'Apple', '0','4','Bill is taller than Peter', 'Anxious', 'Spoke', '12', '31311313' ,'16'];
+ -->  
+
+<!-- each correct answer it will be increas the counter++  -->
+    <!-- qustion 1 -->
     <div>
-  		<p> 1. qustion number </p><br>
-  		1 <input type="radio" name="q1" value="holand" required><br>
-  		2 <input type="radio" name="q1" value="holand1"><br>
-  		3 <input type="radio" name="q1" value="holand2"><br>
-  		4 <input type="radio" name="q1" value="holand3">
-  	</div><br>
-
+      <p> 1.  store reduced the price of one of its products by 25 percent. What percentage of the reduced price must it be increased by to put the product back to its original price? </p><br>
+      <input type="radio" name="q1" value="33 percent" required> 33 percent<br>
+      <input type="radio" name="q1" value="20 percent"> 20 percent<br>
+      <input type="radio" name="q1" value="23 percent"> 23 percent<br>
+      <input type="radio" name="q1" value="35 percent"> 35 percent 
+    </div>
+    <br>
+    <!-- qustion 2 --> 
+    <div>
+      <p> 2. Which one of the five is least like the other four? </p><br>
+        <input type="radio" name="q2" value="Potato" required> Potato<br>
+        <input type="radio" name="q2" value="Carrot"> Carrot<br>
+        <input type="radio" name="q2" value="Bean"> Bean<br>
+        <input type="radio" name="q2" value="Apple"> Apple
+    </div>  
+    <br>
+    <!-- qustion 3 --> 
+    <div>
+      <p> 3. How many animals of each sex did Moses take on the ark?</p><br>
+        <input type="radio" name="q3" value="3" required> 3<br>
+        <input type="radio" name="q3" value="1"> 1<br>
+        <input type="radio" name="q3" value="2"> 2<br>
+        <input type="radio" name="q3" value="0"> 0
+    </div>  
+    <br>
+    <!-- qustion 4 --> 
+    <div>
+      <p> 4. Two people can make 2 bicycles in 2 hours. How many people are needed to make 12 bicycles in 6 hours? </p><br>
+        <input type="radio" name="q4" value="6" required> 6<br>
+        <input type="radio" name="q4" value="4"> 4<br>
+        <input type="radio" name="q4" value="2"> 2<br>
+        <input type="radio" name="q4" value="1"> 1
+    </div>
+    <br>
+    <!-- qustion 5 --> 
+    <div>
+      <p> 5. Jack is taller than Peter, and Bill is shorter than Jack. Which of the following statements would be more accurate? </p> <br>
+        <input type="radio" name="q5" value="Bill is taller than Peter" required> Bill is taller than Peter<br>
+        <input type="radio" name="q5" value="Peter is taller than Bill"> Peter is taller than Bill<br>
+        <input type="radio" name="q5" value="Bill is as tall as Peter"> Bill is as tall as Peter<br>
+        <input type="radio" name="q5" value="is impossible to tell whether"> It is impossible to tell whether
+    </div>  
+    <br>
+    <!-- qustion 6 --> 
+    <div>
+      <p> 6. Which of the following words is closest in meaning to APPREHENSIVE? </p><br>
+        <input type="radio" name="q6" value="Thorough" required> Thorough<br>
+        <input type="radio" name="q6" value="Foolish"> Foolish<br> 
+        <input type="radio" name="q6" value="Anxious"> Anxious<br>
+        <input type="radio" name="q6" value="Distraught"> Distraught
+    </div>  
+    <br>
+    <!-- qustion 7 --> 
+    <div>
+      <p> 7. LIGHT BULB is to FILAMENT as WHEEL is to: </p><br>
+        <input type="radio" name="q7" value="Electricity" required> Electricity<br>
+        <input type="radio" name="q7" value="Road"> Road<br>
+        <input type="radio" name="q7" value="Spoke"> Spoke<br>
+        <input type="radio" name="q7" value="Automobile"> Automobile
+    </div>
+    <br>
+      <!-- qustion 8 --> 
       <div>
-  		<p> 2. qustion number </p><br>
-  		1 <input type="radio" name="q2" value="q2" required><br>
-  		2 <input type="radio" name="q2" value="q2"><br>
-  		3 <input type="radio" name="q2" value="q2"><br>
-  		4 <input type="radio" name="q2" value="q2">
-  </div>	<br>
-
-  	<div>
-  		<p> 3. qustion number </p><br>
-  		1 <input type="radio" name="q3" value="q3" required><br>
-  		2 <input type="radio" name="q3" value="q3"><br>
-  		3 <input type="radio" name="q3" value="q3"><br>
-  		4 <input type="radio" name="q3" value="q3">  </div>	<br>
-
-  	<div>
-  		<p> 4. qustion number </p><br>
-  		1 <input type="radio" name="q4" value="q4" required><br>
-  		2 <input type="radio" name="q4" value="q4"><br>
-  		3 <input type="radio" name="q4" value="q4"><br>
-  		4 <input type="radio" name="q4" value="q4">
-  </div>	<br>
-
-  	<div>
-  		<p> 5. qustion number </p><br>
-  		1 <input type="radio" name="q5" value="q5" required><br>
-  		2 <input type="radio" name="q5" value="q5"><br>
-  		3 <input type="radio" name="q5" value="q5"><br>
-  		4 <input type="radio" name="q5" value="q5">
-  </div>	<br>
-
-  	<div>
-  		<p> 6. qustion number </p><br>
-  		1 <input type="radio" name="q6" value="q6" required><br>
-  		2 <input type="radio" name="q6" value="q6"><br>
-  		3 <input type="radio" name="q6" value="q6"><br>
-  		4 <input type="radio" name="q6" value="q6">
-  </div>	<br>
-
-  	<div>
-  		<p> 7. qustion number </p><br>
-  		1 <input type="radio" name="q7" value="q7" required><br>
-  		2 <input type="radio" name="q7" value="q7"><br>
-  		3 <input type="radio" name="q7" value="q7"><br>
-  		4 <input type="radio" name="q7" value="q7">
-  	</div><br>
-
+        <p> 8. Some months have 31 days; how many have 28? </p><br>
+          <input type="radio" name="q8" value="1" required> 1<br>
+          <input type="radio" name="q8" value="3"> 3<br>
+          <input type="radio" name="q8" value="6"> 6<br>
+          <input type="radio" name="q8" value="12"> 12
+      </div> 
+      <br>
+    <!-- qustion 9 --> 
       <div>
-  		<p> 8. qustion number </p><br>
-  		1 <input type="radio" name="q8" value="q8" required><br>
-  		2 <input type="radio" name="q8" value="q8"><br>
-  		3 <input type="radio" name="q8" value="q8"><br>
-  		4 <input type="radio" name="q8" value="q8">
- </div> <br>
-
-  	 <div>
-  		<p> 9. qustion number </p><br>
-  		1 <input type="radio" name="q9" value="q9" required><br>
-  		2 <input type="radio" name="q9" value="q9"><br>
-  		3 <input type="radio" name="q9" value="q9"><br>
-  		4 <input type="radio" name="q9" value="q9">
- </div> <br>
-
-  		<div>
-  		<p> 10. qustion number </p><br>
-  		1 <input type="radio" name="q10" value="q10" required><br>
-  		2 <input type="radio" name="q10" value="q10"><br>
-  		3 <input type="radio" name="q10" value="q10"><br>
-  		4 <input type="radio" name="q10" value="q10">
-      </div><br>
-
-  	<input id="button" type="button" value="Result" onclick="sub();">
-</fieldset>
-</form>
-  </div>
+        <p> 9. Which one of the five makes the best comparison?   CAACCAC is to 3113313 as CACAACAC is to: </p><br>
+          <input type="radio" name="q9" value="31313113" required> 31313113<br>
+          <input type="radio" name="q9" value="31311313"> 31311313<br> 
+          <input type="radio" name="q9" value="31311131"> 31311131<br> 
+          <input type="radio" name="q9" value="13133313"> 13133313
+      </div> 
+      <br>
+      <!-- qustion 10 --> 
+      <div>
+        <p> 10. Nia,  twelve years old, is three times as old as her sister. How old will Nia be when sheis twice as old as her sister? </p><br>
+          <input type="radio" name="q10" value="15" required> 15<br>
+          <input type="radio" name="q10" value="18"> 18<br>
+          <input type="radio" name="q10" value="16"> 16<br>
+          <input type="radio" name="q10" value="20"> 20
+      </div>
+      <br>
+<!-- The candidate name and age--> 
+      Your name: <input id="Name" type="text" name="Name">
+      Your age: <input  id="Age" type="text" name="Age"><br><br>
+<!-- this btn to submit the answer  -->
+      <input id="button" type="button" value="Result" onclick="sub();"> 
+    </fieldset>
+  </form>
+</div>
+    <!-- this text for result   -->
   <div id="result" style="text-align: center; margin-top: 10px"></div>
 </div> 
 
-<hr>
-<footer>© 2018 Amjad &#38;
- Mohannad All Rights Reserved</footer>
+  <hr>
+  <footer>© 2018 Amjad &#38;
+    Mohannad All Rights Reserved
+  </footer>
 
-
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
   <script type="text/javascript" src="quiz.js"></script>
 </body>
 </html>

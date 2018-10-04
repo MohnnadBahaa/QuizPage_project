@@ -1,32 +1,31 @@
-h1 {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px 10px;
+* {
+  margin: 0;
 }
-header p {
-    color: #f2f2f2;
-    text-align: center;
+
+body {
+  background-color: #ddd;
 }
 
 header {
-	background-color:   #333;
-	height: 100px;
-	
-}
-body{
-	margin: 0;
-     background-color: #ddd;
+  background-color:   #333;
+  height: 100px;
+  
 }
 
-*{
-margin: 0;
-box-sizing: border-box;	
-font-family:Arial, Helvetica, sans-serif;
+header h1 {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+header p {
+  color: #f2f2f2;
+  text-align: center;
 }
 
 .content, footer {
-    background-color: #ddd;
-    padding: 20px;
+  background-color: #ddd;
+  padding: 20px;
     
 }
 
@@ -36,33 +35,21 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 button, [type="button"] {
-	background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    display: block;
+  background-color: #008CBA; 
+  border: 2px solid #008CBA;
+  color: black; 
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  display: block;
 	margin: auto;
 }
 
-
-button, [type="button"] {
-    background-color: #008CBA; 
-    color: black; 
-    border: 2px solid #008CBA;
-    font-weight: bold;
-
-}
 button:hover, [type="button"]:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 #body{
@@ -71,12 +58,13 @@ button:hover, [type="button"]:hover {
 
 form div {
 	border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #ddd;
-    margin: 20px;
-    padding:10px;
+  border-radius: 10px;
+  margin: 5px;
+  padding:10px;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
+
+
